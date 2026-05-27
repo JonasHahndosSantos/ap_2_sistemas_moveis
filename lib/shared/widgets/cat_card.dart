@@ -1,4 +1,4 @@
-import 'package:ap2_sistemas_moveis/models/cat_model.dart';
+import 'package:ap2_sistemas_moveis/modules/cat_model.dart';
 import 'package:flutter/material.dart';
 
 class CatCard extends StatelessWidget {

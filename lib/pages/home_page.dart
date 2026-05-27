@@ -1,7 +1,7 @@
+import 'package:ap2_sistemas_moveis/modules/cat_model.dart';
 import 'package:ap2_sistemas_moveis/shared/api/cat_api.dart';
 import 'package:ap2_sistemas_moveis/shared/widgets/cat_card.dart';
 import 'package:flutter/material.dart';
-import '../models/cat_model.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

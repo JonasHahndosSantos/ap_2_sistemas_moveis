@@ -39,4 +39,22 @@ class CatModel {
       adaptability: adaptability,
     );
   }
+
+  factory CatModel.fromBreedJson(
+    Map<String, dynamic> json, {
+    String? imageUrl,
+  }) {
+    final referenceImageId = json['reference_image_id'];
+
+    return CatModel(
+      imageUrl: imageUrl ??
+          (referenceImageId != null
+              ? 'https://cdn2.thecatapi.com/images/$referenceImageId.jpg'
+              : ''),
+      breedName: json['name'] ?? 'Sem raça informada',
+      description: json['description'] ?? 'Sem descrição',
+      weight: json['weight']?['metric'] ?? 'Não informado',
+      adaptability: json['adaptability'] ?? 0,
+    );
+  }
 }
